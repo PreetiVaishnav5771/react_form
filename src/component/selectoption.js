@@ -1,4 +1,4 @@
-const selectoption = () => {
+const Selectoption = () => {
     return (
         <div className="container p-5">
           <select cleasName= "custom-select" onchange= {(e)=>{
@@ -12,7 +12,7 @@ const selectoption = () => {
             <option value="python">python</option>
           </select>
           {languagestate}
-        </div>
+        </div>  
       );
-      export default selectoption;
+      export default Selectoption;
 }

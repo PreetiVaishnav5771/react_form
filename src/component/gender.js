@@ -1,4 +1,4 @@
-const gender=()=> {
+const Gender=()=> {
     const [gender, setgender]=usestate();
   
     return (
@@ -9,4 +9,4 @@ const gender=()=> {
       </div>
     );
   }
-  export default gender;
+  export default Gender; 

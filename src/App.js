@@ -1,17 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import getdata from './getdate'
-import inputfile from './inputfile' 
-import datepick from './datepick'
-import selectoption from './selectoption'
-import gender from './gender'
-import range from './range'
+import Getdata from './Getdate'
+import Inputfile from './Inputfile' 
+import Datepick from './Datepick'
+import Selectoption from './ Slectoption'
+import Gender from './Gender'
+import Range from './Range'
 import React {usestate}from './React'
 
-function App() {
+function App = () => {
   const [data,setdata]=usestate(null)
   function getData(val){
-    console.log(val.target.value)
     setdata(val.target.value)
   }  return (
     <div className="App">

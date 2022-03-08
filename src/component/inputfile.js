@@ -1,4 +1,4 @@
-const inputfile =() => {
+const Inputfile =() => {
     return (
       <div className="App">
         <h1>Input file in react js !</h1>
@@ -7,4 +7,4 @@ const inputfile =() => {
     );
    }
 
-   export default inputfile;    
+   export default Inputfile;    

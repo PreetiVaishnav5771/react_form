@@ -1,5 +1,5 @@
 
-const datepick = () => {
+const Datepick = () => {
     const [date,setdate].usestate();
     console.log ("date", date);
     return (
@@ -11,4 +11,4 @@ const datepick = () => {
     );
   }
 
-  export default datepick;
+  export default Datepick;
