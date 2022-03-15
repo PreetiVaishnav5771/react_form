@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 
 const Selectoption = () => {
-  const [option, setOption] = useState();
-  const selectedLanguage = (e) => {
-    
-    setOption(e.target.value)
+  const [option, setoption] = useState();
+  const handleChange = (e) => {
+    setoption(e.target.value)
   }
   console.log(option)
     return (
@@ -12,7 +11,7 @@ const Selectoption = () => {
          <h5>SELECT LANGUAGE</h5>
         <input type="text" name="education" id="education" placeholder="select your Education"/>  
            
-          <select className= "custom-select" value= {option}  onChange= {(e)=>{const selectedLanguage = e.target.value;}}>
+          <select className="custom-select" value={option}  onChange={handleChange}>
             <option value="java">java</option>
             <option value="react">react</option>
             <option value="C++">C++</option>

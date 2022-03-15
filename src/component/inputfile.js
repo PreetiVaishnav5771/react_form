@@ -1,17 +1,17 @@
 import { useState } from "react";
 
 const Inputfile =() => {
-  const [file, setFile] = useState();
+  const [file, setfile] = useState();
  const upload =(e) => {  
-  Inputfile.current.click();
-  setFile(e.target.Inputfile)
+  // setfile(e.target.files[0])
+  console.log(e.target)
    }
    console.log(file)
 
     return (
       <div className="App">
         <h5>INPUT FILES IN REACT JS !</h5>
-            <input type= "file" Inputfile= {file} onClick= {(e)=>upload(e)} name="img"/>
+            <input type= "file" value={file} onClick= {upload}/>
       </div>
     );
    
