@@ -14,4 +14,4 @@ const GetData = () => {
         </div>
     );
 };
-export default GetData; 
+export default GetData;
