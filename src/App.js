@@ -1,34 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
-import Getdata from './Getdate'
-import Inputfile from './Inputfile' 
-import Datepick from './Datepick'
-import Selectoption from './ Slectoption'
-import Gender from './Gender'
-import Range from './Range'
-import React, {usestate}from './React'
+import Getdata from './component/getdata'
+// import Range from './Range'
+import React, {useState}from 'react'
+import Gender from './component/gender'
+import Datepick from './component/datepick';
+import Inputfile from './component/inputfile';
+import Selectoption from './component/selectoption'
+import Range from './component/range';
 
-function App = () => {
-  const [data,setdata]=usestate({
+const App = () => {
+  const [data,setdata]=useState({
     Inputfile:"",Getdata:"",Range:"",Selectoption:"",Gender:"",Datepick:""
   });
   
-  function getData(val){
-    setdata(val.target.value)
-  }  return (
+  // function getData(val){
+  //   setdata(val.target.value)
+   return (
     <div className="App">
       
        <Getdata/>
 
-      <Inputfile/>
-      
-      <Datepick/>
+       <Gender/>
 
-      <Selectoption/>
-    
-      <Gender/>
-      
-      <App/>
+       <Datepick/>
+
+       <Inputfile/>
+
+       <Selectoption/>
+
+       <Range/>
+
 
     </div>
   );

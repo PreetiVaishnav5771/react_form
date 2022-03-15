@@ -1,10 +1,14 @@
 const Inputfile =() => {
+  
+ const upload =(e) => {
+  Inputfile.current.click();
+   }
     return (
       <div className="App">
-        <h1>Input file in react js !</h1>
-        <input type= "file" onchange= {(e)=>this.upload(e) } name="img"/>
+        <h5>INPUT FILES IN REACT JS !</h5>
+            <input type= "file" onClick= {(e)=>upload(e)} name="img"/>
       </div>
     );
-   }
-
+   
+}
    export default Inputfile;    

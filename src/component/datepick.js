@@ -1,13 +1,17 @@
+import { useState } from "react";
 
 const Datepick = () => {
-    const [date,setdate].usestate();
-    console.log ("date", date);
+  const [date, setDate] = useState();
+  const handleSubmit = (e) => {
+    setDate(e.target.value)
+  }
+  console.log(date)
     return (
       <div className="App">
-        <h1>select date</h1>
-        <input type= "date" onchange= {e => setdate(e.target.value)}/>
-        
-      </div>
+        <h5>SELECT DATE</h5>
+        <input type= "date" value= {date} onSubmit={handleSubmit}/>
+      </div> 
+      
     );
   }
 

@@ -1,19 +1,21 @@
-const App=()=> {
-    const [val,steval]=usestate([0,50])
-    const updateval=(e,item)=>{
-      steval(item)
-    }
+import { useState } from "react";
+
+const Range=()=> {
+  const [range, setrange] = useState();
+  const handleChange = (e) => {
+    setrange(e.target.value)
+  }
+   console.log(range)
+
     return (
       <div className="App">
-        <h1> react material UI / range slider</h1>
-        <div stuyle = {{width:300 margin:30}}>
-          <slider
-          value={val}
-          onchange={updateval}
-          />
+        <h5>RANGE SLIDER</h5>
+        <div style = {{width:1800, margin:30}}>
+      <input type= "range" id="rangebar" name="rangebar" min="0" max="100" value={range} onChange={handleChange}/>
         </div>
       </div>
     );
-  }
+    
+    }
 
-  export default App;   
+  export default Range;
